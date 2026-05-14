@@ -2,59 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
 @import "tailwindcss";
 
-:root {
-  --outline: #8c909f;
-  --inverse-primary: #005ac2;
-  --on-tertiary-container: #00311f;
-  --on-tertiary-fixed: #002113;
-  --surface: #0a122a;
-  --primary: #adc6ff;
-  --secondary-fixed: #ffdadb;
-  --on-tertiary-fixed-variant: #005236;
-  --error: #ffb4ab;
-  --inverse-surface: #dbe1ff;
-  --on-error: #690005;
-  --tertiary-fixed: #6ffbbe;
-  --surface-container-lowest: #050d25;
-  --surface-tint: #adc6ff;
-  --primary-fixed-dim: #adc6ff;
-  --outline-variant: #424754;
-  --background: #0a122a;
-  --on-tertiary: #003824;
-  --inverse-on-surface: #282f49;
-  --surface-variant: #2c344d;
-  --on-secondary-container: #ffc2c4;
-  --surface-dim: #0a122a;
-  --on-primary: #002e6a;
-  --tertiary-container: #00a572;
-  --secondary: #ffb2b7;
-  --primary-container: #4d8eff;
-  --on-secondary-fixed-variant: #92002a;
-  --surface-container-high: #212942;
-  --surface-container-low: #131a33;
-  --secondary-container: #b50036;
-  --error-container: #93000a;
-  --primary-fixed: #d8e2ff;
-  --on-secondary: #67001b;
-  --surface-container: #171e37;
-  --on-primary-fixed: #001a42;
-  --tertiary: #4edea3;
-  --on-secondary-fixed: #40000d;
-  --on-surface: #dbe1ff;
-  --on-primary-fixed-variant: #004395;
-  --surface-bright: #313852;
-  --tertiary-fixed-dim: #4edea3;
-  --surface-container-highest: #2c344d;
-  --on-surface-variant: #c2c6d6;
-  --on-primary-container: #00285d;
-  --secondary-fixed-dim: #ffb2b7;
-  --on-background: #dbe1ff;
-  --on-error-container: #ffdad6;
+@theme {
+  --color-outline: #8c909f;
+  --color-inverse-primary: #005ac2;
+  --color-on-tertiary-container: #00311f;
+  --color-on-tertiary-fixed: #002113;
+  --color-surface: #0a122a;
+  --color-primary: #adc6ff;
+  --color-secondary-fixed: #ffdadb;
+  --color-on-tertiary-fixed-variant: #005236;
+  --color-error: #ffb4ab;
+  --color-inverse-surface: #dbe1ff;
+  --color-on-error: #690005;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-surface-container-lowest: #050d25;
+  --color-surface-tint: #adc6ff;
+  --color-primary-fixed-dim: #adc6ff;
+  --color-outline-variant: #424754;
+  --color-background: #0a122a;
+  --color-on-tertiary: #003824;
+  --color-inverse-on-surface: #282f49;
+  --color-surface-variant: #2c344d;
+  --color-on-secondary-container: #ffc2c4;
+  --color-surface-dim: #0a122a;
+  --color-on-primary: #002e6a;
+  --color-tertiary-container: #00a572;
+  --color-secondary: #ffb2b7;
+  --color-primary-container: #4d8eff;
+  --color-on-secondary-fixed-variant: #92002a;
+  --color-surface-container-high: #212942;
+  --color-surface-container-low: #131a33;
+  --color-secondary-container: #b50036;
+  --color-error-container: #93000a;
+  --color-primary-fixed: #d8e2ff;
+  --color-on-secondary: #67001b;
+  --color-surface-container: #171e37;
+  --color-on-primary-fixed: #001a42;
+  --color-tertiary: #4edea3;
+  --color-on-secondary-fixed: #40000d;
+  --color-on-surface: #dbe1ff;
+  --color-on-primary-fixed-variant: #004395;
+  --color-surface-bright: #313852;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-surface-container-highest: #2c344d;
+  --color-on-surface-variant: #c2c6d6;
+  --color-on-primary-container: #00285d;
+  --color-secondary-fixed-dim: #ffb2b7;
+  --color-on-background: #dbe1ff;
+  --color-on-error-container: #ffdad6;
+
+  --spacing-unit: 4px;
+  --spacing-container-padding: 20px;
+  --spacing-margin: 24px;
+  --spacing-gutter: 16px;
+
+  --font-label-caps: 'JetBrains Mono', monospace;
+  --font-headline-md: 'Geist', sans-serif;
+  --font-data-mono: 'JetBrains Mono', monospace;
+  --font-display-lg: 'Geist', sans-serif;
+  --font-body-md: 'Geist', sans-serif;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--on-background);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
   font-family: 'Geist', sans-serif;
   overflow-x: hidden;
 }
@@ -78,29 +89,6 @@ body {
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-
-.font-label-caps {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-}
-
-.font-data-mono {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  font-weight: 500;
-}
-
-.font-headline-md {
-  font-family: 'Geist', sans-serif;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 600;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
