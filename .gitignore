@@ -1,0 +1,21 @@
+# Environments
+venv/
+env/
+.env
+.env.*
+
+# Compiled Python / Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Next.js / Node
+node_modules/
+.next/
+out/
+build/
+
+# OS Files
+.DS_Store
+Thumbs.db
